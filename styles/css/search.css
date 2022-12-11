@@ -1,0 +1,61 @@
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  align-content: center;
+}
+.card img {
+  vertical-align: middle;
+}
+
+.card-body {
+  box-sizing: border-box;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-body {
+  top: 85%;
+  visibility: visible;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5137254902);
+  opacity: 1;
+}
+
+.search-cards {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 85vw;
+  gap: 2rem !important;
+}
+
+.card {
+  width: 100% !important;
+  align-items: center !important;
+  display: flex !important;
+  margin: 0 auto;
+}
+
+.search-cards .card img {
+  max-width: 100%;
+}
+
+footer {
+  margin-bottom: 0 !important;
+}/*# sourceMappingURL=search.css.map */
